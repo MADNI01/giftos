@@ -1,3 +1,4 @@
+import router from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useDispatch } from "react-redux";
 import Nav from "../../components/Nav";
@@ -15,6 +16,7 @@ const ProductPage = (props) => {
 
     if(!user){
       alert('sign in to buy this item')
+      router.push('/signup')
       return;
     }
     dispatch(
