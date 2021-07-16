@@ -28,9 +28,9 @@
   text-decoration: none;
   cursor: pointer;
 }
-//#f9ece6
+
 .header {
-  background-color: red;
+  background-color: #f9ece6;
   border-radius: 16px 16px 0 0;
 }
 .header .container {
