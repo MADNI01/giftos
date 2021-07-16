@@ -1,0 +1,108 @@
+.product {
+  padding: 60px 20px;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.product .container {
+  display: flex;
+  gap: 40px;
+}
+.product .container .box {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product .container .box img {
+  height: 350px;
+}
+.product .container .info {
+  width: 40%;
+}
+@media (max-width:700px){
+  .product .container{
+    flex-direction: column;
+
+  }
+  .product .container .box{
+    width: auto;
+  }
+  .product .container .info{
+    width: auto;
+  }
+}
+.product .container .info > span {
+  color: #202db7;
+}
+.product .container .info > h2 {
+  margin: 40px 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+.product .container .info > p {
+  color: #86939e;
+  line-height: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #86939e;
+}
+.product .container .info form {
+  display: flex;
+  flex-direction: column;
+}
+.product .container .info form > span{
+    margin-top: 20px;
+    color: #86939e;
+}
+.product .container .info form > div:first-of-type{
+    padding: 20px 0;
+    border-bottom: 1px solid #86939e;
+}
+
+.product .container .info form >div:last-of-type{
+    display: flex;
+    align-items: center;
+}
+.product .container .info form >div:last-of-type span{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.product .container .info form > div:last-of-type button{
+    margin: 20px 0;
+    padding: 10px;
+    width: 175px;
+    background-color: #f16179;
+    border: 2px solid #f16179;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.product .container .info form > div:last-of-type button:hover{
+    background-color: unset;
+    color: black;
+}

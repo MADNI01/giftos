@@ -1,0 +1,89 @@
+.cart {
+  margin: 40px 20px;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.cart .container .products {
+  width: 70%;
+}
+
+.cart .container .price-info {
+  margin: 40px 0;
+  padding: 40px 10px;
+  width: 30%;
+  height: fit-content;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+.cart .container .price-info h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cart .container .price-info .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart .container .price-info .info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .container .price-info button {
+  margin: 30px auto 0;
+  padding: 10px;
+  width: 175px;
+  background-color: #f16179;
+  border: 1px solid #f16179;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+}
+.cart .container .price-info button:hover{
+  background-color: unset;
+  color: black;
+}
+
+@media (max-width:1000px){
+  .container{
+    flex-direction: column;
+    
+  }
+  .cart .container .products {
+    width: unset;
+  }
+  .cart .container .price-info{
+    width: unset;
+  }
+}

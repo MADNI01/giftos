@@ -1,0 +1,103 @@
+.saving {
+  margin: 40px 20px;
+  padding-top: 60px;
+  background-color: #6929a5;
+  border-radius: 16px;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.saving .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.saving .container .box {
+  width: 50%;
+  padding: 0 20px;
+}
+.saving .container .box img {
+  width: 100%;
+  vertical-align: middle;
+}
+.saving .container .text {
+  width: 50%;
+  padding: 0 20px;
+}
+.saving .container .text h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 45px;
+}
+.saving .container .text p {
+  margin-top: 20px;
+  color: white;
+}
+.saving .container .text .btns {
+  margin-top: 30px;
+  display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.saving .container .text .btns button {
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: black;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 165px;
+}
+.saving .container .text .btns button:nth-child(1) {
+  background-color: white;
+  border: 2px solid white;
+}
+.saving .container .text .btns button:nth-child(1):hover {
+  background-color: #6929a5;
+  color: white;
+}
+.saving .container .text .btns button:nth-child(2) {
+  background-color: #9242dd;
+  border: 2px solid #9242dd;
+  color: white;
+}
+.saving .container .text .btns button:nth-child(2):hover {
+  background-color: #6929a5;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .saving .container {
+    flex-direction: column-reverse;
+  }
+  .saving .container .box,
+  .saving .container .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .saving .container .text h2 {
+    font-size: 35px;
+  }
+}

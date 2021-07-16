@@ -1,0 +1,25 @@
+.review{
+    padding: 40px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition:opacity  0.8s;
+    
+}
+.review.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+
+}
+.review .text h5{
+    color: #db4f66;
+    font-size: 20px;
+    font-weight: 600;
+}
+.review .text p:first-of-type{
+    color: #bfc0c0;
+    margin-bottom: 20px;
+}
+

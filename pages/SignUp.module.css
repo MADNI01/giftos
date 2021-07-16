@@ -1,0 +1,171 @@
+.auth .title {
+  text-align: center;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 0 0 40px 40px;
+}
+.auth .title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #f16179;
+}
+.auth .info {
+  margin-top: 80px;
+
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth .info form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 460px;
+  height: 450px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  padding: 46px 70px;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.auth .info form h5 {
+  font-size: 40px;
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 0;
+}
+@media (max-width: 440px) {
+  .auth .info {
+    margin-bottom: 20px;
+  }
+  .auth .info form h5 {
+    font-size: 30px;
+  }
+  .auth .info form {
+    padding: 45px 20px;
+  }
+}
+.auth .info form h5:nth-of-type(1) {
+  transform: translateX(200%);
+  transition: 0.5s;
+}
+.auth .info form h5:nth-of-type(2) {
+  transform: translateX(-150%);
+  transition: 0.5s;
+  position: absolute;
+}
+.auth .info form h5.signshow {
+  transform: translateX(0px);
+  transition: 0.5s;
+  opacity: 1;
+}
+.auth .info form h5.loginshow {
+  transform: translateX(0px);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.auth .info form > div {
+  position: relative;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.auth .info form div svg {
+  color: #aeabb0;
+  transition: 0.5s;
+  position: absolute;
+  left: 0;
+}
+
+.auth .info form div label {
+  position: absolute;
+  top: 11px;
+  left: 35px;
+  color: #aeabb0;
+  font-weight: 600;
+  cursor: text;
+  transition: 0.5s;
+}
+.auth .info form div input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 90%;
+  font-size: 15px;
+  border-bottom: 2px solid #aeabb0;
+}
+.auth .info form div input:focus,
+.auth .info form div input:not(:placeholder-shown) {
+  border-bottom: #38b89c 2px solid;
+}
+.auth .info form > div > div {
+  display: flex;
+  align-items: center;
+}
+.auth .info form div input:focus + div label,
+.auth .info form div input:not(:placeholder-shown) + div label {
+  color: #38b89c;
+  top: -20px;
+  font-size: 14px;
+}
+.auth .info form div input:focus + div svg,
+.auth .info form div input:not(:placeholder-shown) + div svg {
+  color: #38b89c;
+}
+
+.auth .info form > span {
+  position: absolute;
+  bottom: 140px;
+  right: 75px;
+  cursor: pointer;
+  color: #807e81;
+}
+@media (max-width: 440px) {
+  .auth .info form > span {
+    bottom: 160px;
+    right: 30px;
+  }
+}
+.auth .info form > button {
+  margin-top: 30px;
+  padding: 10px 60px;
+  border: 2px solid #f16179;
+  background-color: #f16179;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  width: 190px;
+  transition: 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+.auth .info form > button:hover {
+  background: unset;
+  color: black;
+}
+.auth .info form > button:nth-of-type(1) {
+  transform: translateX(250%);
+}
+.auth .info form > button:nth-of-type(2) {
+  transform: translateX(-250%);
+  position: absolute;
+  bottom: 55px;
+}
+
+.auth .info form > button.signshow {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.auth .info form > button.loginshow {
+  transform: translateX(0px);
+  opacity: 1;
+}
