@@ -1,0 +1,91 @@
+.contact {
+  padding: 60px 20px;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.contact .container .title h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact .container .info {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (max-width: 900px) {
+  .contact .container .info {
+    flex-direction: column;
+  }
+}
+.contact .container .info .address {
+  width: 60%;
+}
+.contact .container .info .address iframe {
+  width: 100%;
+  border: none;
+}
+.contact .container .info .form {
+  width: 40%;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .contact .container .info .address {
+    width: 100%;
+  }
+  .contact .container .info .form {
+    width: 100%;
+  }
+}
+.contact .container .info .form form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .container .info .form form input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+}
+.contact .container .info .form form input:last-of-type {
+  padding: 40px 40px 40px 15px;
+}
+.contact .container .info .form form button {
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: #db4f66;
+  border: 2px solid #db4f66;
+}
+.contact .container .info .form form button:hover {
+  background-color: white;
+  color: black;
+}

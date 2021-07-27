@@ -1,0 +1,186 @@
+.all {
+  position: relative;
+
+}
+.full {
+  margin: 0;
+}
+.full .header {
+ border-radius: 0;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1171px;
+  }
+}
+.logo {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.logo a {
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #f9ece6;
+  border-radius: 16px 16px 0 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header .container .list ul li {
+  display: inline-block;
+  color: #514f4f;
+  padding: 5px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header .container .list ul li:hover {
+  background-color: white;
+}
+.header .container .right,
+.header .container .right div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .right div {
+  cursor: pointer;
+}
+.header .container .right div label {
+  margin-left: 10px;
+  color: #514f4f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header .container .right .cart span {
+  display: none;
+}
+.header .container .right .cart span.active {
+  display: block;
+  padding: 0px 8px;
+  background-color: #f89cab;
+  color: white;
+  border-radius: 4px;
+}
+.header .container .right .cart {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    transition: height 0.3s ease;
+    overflow: hidden;
+  }
+  .header:not(.active) {
+    height: 0;
+  }
+  .header.active {
+    height: 230px;
+  }
+  .all .logo .container a {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .header .container .right {
+    position: absolute;
+    top: 20px;
+    left: 6px;
+  }
+  .header .container .right .cart span.active {
+    padding: 0 5px;
+  }
+  .header .container .right div:first-child label {
+    display: none;
+  }
+  .logo .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+  .hum {
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .hum span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .hum::before,
+  .hum::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    right: 0;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .hum::before {
+    top: 0;
+  }
+  .hum::after {
+    bottom: 0;
+  }
+  .hum.active span {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  .hum.active::before {
+    transform: rotate(45deg) translate(10px, 7px);
+  }
+  .hum.active::after {
+    transform: rotate(-45deg) translate(8px, -5px);
+  }
+
+  .header .container {
+    flex-direction: column;
+  }
+  .header .container .list ul {
+    text-align: center;
+  }
+  .header .container .list ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .header .container .right {
+    margin: 5px 0;
+  }
+}

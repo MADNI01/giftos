@@ -1,0 +1,57 @@
+.section {
+  padding: 40px 0;
+  margin: 0 20px;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.section .container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+  
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.all {
+  text-align: center;
+  margin-top: 40px;
+  
+}
+.all button {
+  padding: 10px 30px;
+  border: 2px solid #f16179;
+  background-color: #f16179;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.all button:hover {
+  background-color: white;
+  color: #f16179;
+}

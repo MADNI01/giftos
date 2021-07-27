@@ -1,0 +1,57 @@
+.why {
+  padding: 40px 20px;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.why .container .title h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.why .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+.why .container .cards .card {
+  background-color: #f9f8f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.why .container .cards .card img {
+  width: 20%;
+}
+
+.why .container .cards .card h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.why .container .cards .card p {
+  margin-bottom: 20px;
+}
