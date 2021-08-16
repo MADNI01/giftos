@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const [user,loading] =useAuthState(auth)
 
 
-  if(loading) return <Loading />
+
 
   return (
       <Provider store={store}>

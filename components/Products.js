@@ -4,6 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
 import Link from "next/link";
+import { db } from "../firebase/firebase";
 
 const Products = (props) => {
   
@@ -31,6 +32,7 @@ const Products = (props) => {
             />
           ))}
         </div>
+        
         <div className={classes.all}>
             <Link href='/products'><button >View All Products</button></Link>
         </div>
@@ -46,5 +48,19 @@ export default Products;
 
 
 
+export async function getStaticProps(){
 
+  const ref = await db.collection('items').get()
+
+  const dataRef = ref.docs.map((item)=>({
+    ...item.data(),
+    id:item.id
+  }))
+  
+  return {
+    props:{
+      data : JSON.stringify(dataRef)
+    }
+  }
+}
 

@@ -8,10 +8,12 @@ import Saving from '../components/Saving';
 import Why from '../components/Why';
 import { db } from '../firebase/firebase';
 
+
 export default function Home(props) {
 
   return (
     <div style={{overflow:'hidden'}}>
+
       <Hero />
       <Products items={props.data} />
       <Saving />
@@ -26,7 +28,7 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps(context){
+export async function getStaticProps(){
 
   const ref = await db.collection('items').get()
 

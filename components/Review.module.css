@@ -8,7 +8,7 @@
     
 }
 .review.active {
-    position: relative;
+    position: absolute;
     opacity: 1;
     visibility: visible;
 
