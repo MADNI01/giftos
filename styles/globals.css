@@ -9,6 +9,14 @@
 html{
   scroll-behavior: smooth;
 }
+#nprogress .bar {
+  background: #f16179;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #f16179;
+  border-left-color: #f16179;
+}
 
 
 
