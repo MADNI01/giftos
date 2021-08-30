@@ -6,6 +6,7 @@
 }
 .review {
   position: relative;
+  height: 253px;
 }
 
 @media (min-width: 768px) {
