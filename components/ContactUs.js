@@ -5,18 +5,8 @@ import { useEffect } from "react";
 const ContactUs = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
-    fetch(
-      `https://f3-dev.azurewebsites.net/api/currencies`
-      
-    )
-      .then((data) => {
-        return data.json();
-      })
-      .then((data) => {
-        console.log(data);
-      });
   }, []);
-
+  
   return (
     <div className={classes.contact} id="contact">
       <div className={classes.container}>
