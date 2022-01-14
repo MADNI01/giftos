@@ -5,6 +5,7 @@ import { useEffect } from "react";
 const Why = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
+    
   }, []);
   return (
     <div className={classes.why} id="why">
